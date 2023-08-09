@@ -1,7 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../../Molecules/Navbar/Navbar';
+import Name from '../../Atoms/Name/Name';
+import  './NavbarContent.css'
 
 export default function NavbarContent() {
-  return (
-    <div>NavbarContent</div>
-  )
+    return (
+        <nav>
+            <Name title='Nav Dhamrait' />
+            <Navbar/>
+        </nav>
+    );
 }
