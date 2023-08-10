@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../../Molecules/Navbar/Navbar';
-import Name from '../../Atoms/Name/Name';
-import  './NavbarContent.css'
+import './NavbarContent.css'
+import NameAndLogo from '../../Molecules/NameAndLogo/NameAndLogo';
 
 export default function NavbarContent() {
     return (
-        <nav>
-            <Name title='Nav Dhamrait' />
-            <Navbar/>
+        <nav className='nav-content'>
+            <NameAndLogo />
+            <Navbar />
         </nav>
     );
 }

@@ -1,27 +1,17 @@
 import React from 'react';
-import './Navbar.css'
+import './Navbar.css';
+import { labelsNavBar } from '../../../Utils/Navbar';
 
 export default function Navbar() {
     return (
         <ul className='nav-links'>
-            <li>
-                <a href='#'>Home</a>
-            </li>
-            <li>
-                <a href='#'>About</a>
-            </li>
-            <li>
-                {' '}
-                <a href='#'>Services</a>
-            </li>
-            <li>
-                {' '}
-                <a href='#'>Technologies</a>
-            </li>
-            <li>
-                {' '}
-                <a href='#'>Contact</a>
-            </li>
+            {labelsNavBar.map((label, idx) => (
+                <React.Fragment key={idx}>
+                    <li>
+                        <a href='#'>{label}</a>
+                    </li>
+                </React.Fragment>
+            ))}
         </ul>
     );
 }
