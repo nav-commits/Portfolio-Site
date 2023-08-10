@@ -1,25 +1,14 @@
-import logo from './logo.svg';
+import { Button } from './Components/Atoms/Button/Button';
 import './App.css';
+import NavbarSection from './Components/Views/NavbarSection';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className='App'>
+            <NavbarSection/>
+            {/* <Button title='More About Me' backgroundColor='39CAD3' width='220px' /> */}
+        </div>
+    );
 }
 
 export default App;
