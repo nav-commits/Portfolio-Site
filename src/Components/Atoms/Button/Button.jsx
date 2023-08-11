@@ -1,14 +1,14 @@
 import React from 'react';
+import './Button.css';
 
 export const Button = ({ title, backgroundColor, width }) => {
     return (
         <div
             style={{
-                padding: '10px',
-                borderRadius: '10px',
                 backgroundColor: backgroundColor,
                 width: width,
             }}
+            className='button'
         >
             {title}
         </div>
