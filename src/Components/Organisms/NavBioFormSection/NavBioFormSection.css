@@ -9,14 +9,14 @@
     background-color: #000000;
     padding: 30px;
     border-radius: 7px;
-    width: 390px;
+    width: 410px;
     margin-top: 25px;
     position: relative;
     top: 80px;
 }
 
-.form-text{
-     color: lightgrey;
-     font-size: 14px; 
-     text-align: center;
+.form-text {
+    color: lightgrey;
+    font-size: 14px;
+    text-align: center;
 }
