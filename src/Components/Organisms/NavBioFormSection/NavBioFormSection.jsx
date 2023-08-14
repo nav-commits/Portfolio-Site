@@ -1,24 +1,35 @@
 import React from 'react';
 import NavBioSection from '../../Molecules/NavBioSection/NavBioSection';
+import Label from '../../Atoms/Label/Label';
+import Input from '../../Atoms/Input/Input';
+import { Button } from '../../Atoms/Button/Button';
+import '../NavBioFormSection/NavBioFormSection.css';
 
 export default function NavBioFormSection() {
     return (
-        <div
-            style={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'center',
-                alignContent: 'center',
-                alignItems: 'center',
-                gap: '100px'
-            }}
-        >
+        <div className='parent-container'>
             <NavBioSection />
-            {/* the form will come below here */}
-            <div style={{ backgroundColor: '#000000', padding: '20px', borderRadius: '3px', width: '390px', marginTop: '15px', }}>
-                <p style={{ color: '#FFFFFF', fontSize: '10px', textAlign: 'center' }}>Have questions or want to work together?</p>
-                <label style={{ color: '#FFFFFF', fontSize: '10px' }} htmlFor="">Name</label>
-                <input type="text" name="" id="" />
+            <div className='form-container'>
+                <p className='form-text'>Have questions or want to work together?</p>
+                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                    <Label name={'Name'} />
+                    <Input padding='10px' />
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                    <Label name={'Email'} />
+                    <Input padding='10px' />
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                    <Label name={'Message'} />
+                    <Input padding='40px' />
+                </div>
+                <Button
+                    title='Submit'
+                    backgroundColor='#39CAD3'
+                    width='55px'
+                    marginTop='10px'
+                    fontSize={'12px'}
+                />
             </div>
         </div>
     );
