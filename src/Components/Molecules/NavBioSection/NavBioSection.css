@@ -1,0 +1,13 @@
+.bio-container{
+    margin-top: 120px;
+}
+.bio-header{
+     margin-bottom: 10px; 
+     font-size: 20px;
+}
+
+.bio-desc{
+     width: 250px;
+     font-size: 13px;
+     margin-bottom: 10px;
+}
