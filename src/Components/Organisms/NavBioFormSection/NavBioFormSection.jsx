@@ -7,15 +7,19 @@ export default function NavBioFormSection() {
             style={{
                 display: 'flex',
                 flexDirection: 'row',
-                justifyContent: 'space-evenly',
+                justifyContent: 'center',
+                alignContent: 'center',
                 alignItems: 'center',
-                marginRight: '70px'
-
+                gap: '100px'
             }}
         >
             <NavBioSection />
             {/* the form will come below here */}
-            <div>hello world</div>
+            <div style={{ backgroundColor: '#000000', padding: '20px', borderRadius: '3px', width: '390px', marginTop: '15px', }}>
+                <p style={{ color: '#FFFFFF', fontSize: '10px', textAlign: 'center' }}>Have questions or want to work together?</p>
+                <label style={{ color: '#FFFFFF', fontSize: '10px' }} htmlFor="">Name</label>
+                <input type="text" name="" id="" />
+            </div>
         </div>
     );
 }

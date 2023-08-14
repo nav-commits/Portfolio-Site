@@ -1,6 +1,7 @@
 .nav-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 150px;
     align-items: center;
     min-height: 8vh;
     background-color: white;
