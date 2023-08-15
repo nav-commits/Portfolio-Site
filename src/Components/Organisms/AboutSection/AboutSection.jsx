@@ -4,7 +4,7 @@ import { Button } from '../../Atoms/Button/Button';
 
 export default function AboutSection() {
     return (
-        <div style={{ marginTop: '220px' }} className='about-container'>
+        <div style={{ marginTop: '220px' }} className='about-container' id='About'>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <img
                     src='https://techcrunch.com/wp-content/uploads/2017/05/joe-eazor-portrait.jpg'

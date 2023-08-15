@@ -1,9 +1,9 @@
 import React from 'react';
 import './Button.css';
 
-export const Button = ({ title, backgroundColor, width, marginTop, fontSize }) => {
+export const Button = ({ title, backgroundColor, width, marginTop, fontSize, disabled }) => {
     return (
-        <div
+        <button
             style={{
                 backgroundColor: backgroundColor,
                 width: width,
@@ -11,8 +11,9 @@ export const Button = ({ title, backgroundColor, width, marginTop, fontSize }) =
                 fontSize: fontSize
             }}
             className='button'
+            disabled={disabled}
         >
             {title}
-        </div>
+        </button>
     );
 };
