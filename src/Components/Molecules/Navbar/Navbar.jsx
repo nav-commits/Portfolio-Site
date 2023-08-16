@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import { labelsNavBar } from '../../../Utils/Navbar';
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 
 export default function Navbar() {
     const [active, setActive] = useState(true);
@@ -37,8 +38,10 @@ export default function Navbar() {
         <ul className='nav-links'>
             {labelsNavBar.map((label, idx) => (
                 <React.Fragment key={idx}>
-                    <li onClick={() => checkLabel(label)}>
-                        <a href={'#'}>{label}</a>
+                    <li >
+                        <Link to={label} smooth={true} offset={200} duration={500} style={{ cursor: 'pointer' }} onClick={() => checkLabel(label)}>
+                            {label}
+                        </Link>
                         <div className={active && labelName === label ? 'active' : null} />
                     </li>
                 </React.Fragment>
