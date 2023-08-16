@@ -8,20 +8,26 @@ import emailjs from '@emailjs/browser';
 import TextArea from '../../Atoms/TextArea/TextArea';
 
 export default function NavBioFormSection() {
-    // const [disabled, setDisabled] = React.useState(true);
 
+    const { REACT_APP_SERVERID, REACT_APP_TEMPLATEID, REACT_APP_PULICKEY } = process.env;
     const sendEmail = (e) => {
         e.preventDefault();
-
-        emailjs.sendForm('service_8by364q', 'template_sa5iohc', e.target, 's6-WhquotJCvaecXM').then(
-            (result) => {
-                console.log(result.text);
-                console.log(result);
-            },
-            (error) => {
-                console.log(error.text);
-            }
-        );
+        emailjs
+            .sendForm(
+                `${REACT_APP_SERVERID}`,
+                `${REACT_APP_TEMPLATEID}`,
+                e.target,
+                `${REACT_APP_PULICKEY}`
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    console.log(result);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
         // setDisabled(false)
         e.target.reset();
     };
