@@ -1,5 +1,5 @@
 .active {
-    height: 4px;
+    height: 5px;
     background-color: #39cad3;
 }
 
@@ -8,4 +8,37 @@
     flex-direction: row;
     justify-content: center;
     gap: 170px;
+    margin-top: 220px;
+}
+.name-text {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.about-section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.download-pdf-button {
+    cursor: pointer;
+    font-size: 9px;
+    padding: 7px;
+    border-radius: 3px;
+    border: none;
+    background-color: #39cad3;
+}
+
+.profile-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    object-fit: cover;
 }

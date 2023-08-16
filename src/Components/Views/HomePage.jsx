@@ -2,7 +2,7 @@ import React from 'react';
 import NavbarContent from '../Organisms/NavbarContent/NavbarContent';
 import NavBioFormSection from '../Organisms/NavBioFormSection/NavBioFormSection';
 import AboutSection from '../Organisms/AboutSection/AboutSection';
-import TechnologiesSection from '../Organisms/TechnolgiesSection/TechnologiesSection';
+import TechSection from '../Organisms/TechSection/TechSection';
 
 export default function HomePage() {
     return (
@@ -10,7 +10,7 @@ export default function HomePage() {
             <NavbarContent />
             <NavBioFormSection />
             <AboutSection />
-            <TechnologiesSection/>
+            <TechSection/>
         </React.Fragment>
     );
 }

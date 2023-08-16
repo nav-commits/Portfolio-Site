@@ -13,7 +13,7 @@ export default function NavBioSection() {
                 Hello there! I'm Nav Dhamrait, a highly skilled and experienced full-stack developer
                 specializing in web development, mobile development, and UX front-end design.{' '}
             </p>
-            <Button title='More About Me' backgroundColor='#39CAD3' width='80px' />
+            <Button title='More About Me' backgroundColor='#39CAD3' width='90px' fontSize={'10px'} />
         </div>
     );
 }

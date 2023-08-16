@@ -5,6 +5,7 @@ import Input from '../../Atoms/Input/Input';
 import { Button } from '../../Atoms/Button/Button';
 import '../NavBioFormSection/NavBioFormSection.css';
 import emailjs from '@emailjs/browser';
+import TextArea from '../../Atoms/TextArea/TextArea';
 
 export default function NavBioFormSection() {
     // const [disabled, setDisabled] = React.useState(true);
@@ -15,7 +16,7 @@ export default function NavBioFormSection() {
         emailjs.sendForm('service_8by364q', 'template_sa5iohc', e.target, 's6-WhquotJCvaecXM').then(
             (result) => {
                 console.log(result.text);
-                console.log(result)
+                console.log(result);
             },
             (error) => {
                 console.log(error.text);
@@ -40,7 +41,7 @@ export default function NavBioFormSection() {
                     </div>
                     <div style={{ display: 'flex', flexDirection: 'column' }}>
                         <Label name={'Message'} />
-                        <Input padding='40px' name={'Message'} />
+                        <TextArea height='180px' name={'Message'} />
                     </div>
 
                     <Button

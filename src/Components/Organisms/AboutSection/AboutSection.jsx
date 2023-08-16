@@ -1,31 +1,37 @@
 import React from 'react';
 import './AboutSection.css';
 import { Button } from '../../Atoms/Button/Button';
+import logo from '../../../Images/20180222_115031.jpeg';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import Resume from '../../../Resume/Nav_DhamraitResume.pdf';
 
 export default function AboutSection() {
     return (
-        <div style={{ marginTop: '220px' }} className='about-container' id='About'>
+        <div className='about-container' id='About'>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <img
-                    src='https://techcrunch.com/wp-content/uploads/2017/05/joe-eazor-portrait.jpg'
-                    alt=''
-                    style={{ height: '90px', width: '90px', borderRadius: '50px' }}
-                />
-                <p style={{ fontSize: '30px' }}>
+                <img src={logo} alt='profile' className='profile-image' />
+                <p className='name-text'>
                     Nav
                     <span style={{ color: '#39CAD3', fontWeight: '300' }}> Dhamrait</span>
                 </p>
-                {/* social icons go here */}
-                <Button
-                    title={'Download CV'}
-                    fontSize={'12px'}
-                    backgroundColor='#39CAD3'
-                    width='90px'
-                    marginTop={'10px'}
-                />
+                <div className='icons-container'>
+                    <LinkedInIcon style={{ color: '#0A66C2' }} />
+                    <GitHubIcon />
+                </div>
+
+                <a href={Resume} download='Example-PDF-document' target='_blank' rel='noreferrer'>
+                    <Button
+                        title={'Download CV'}
+                        fontSize={'12px'}
+                        backgroundColor='#39CAD3'
+                        width='90px'
+                        marginTop={'20px'}
+                    />
+                </a>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <div className='about-section-container'>
                 <p style={{ fontSize: '24px' }}>About</p>
                 <div className='active' style={{ width: '62px', marginBottom: '10px' }} />
                 <p style={{ width: '410px' }}>
