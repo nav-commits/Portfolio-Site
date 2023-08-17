@@ -46,14 +46,17 @@ export default function TechSection() {
                     ))}
                 </div>
                 <div className='tech-image-container'>
-                    {images.map((image, index) => (
-                        <img
-                            style={{ height: '200px', width: '200px', marginTop: '60px' }}
-                            key={index}
-                            src={image.src}
-                            alt={image.label}
-                        />
-                    ))}
+                    {images.map(
+                        (image, index) =>
+                            image.label === activeLabel && (
+                                <img
+                                    style={{ height: '280px', width: '280px', marginTop: '60px' }}
+                                    key={index}
+                                    src={image.src}
+                                    alt={image.label}
+                                />
+                            )
+                    )}
                 </div>
             </div>
         </div>

@@ -46,6 +46,7 @@
     height: 360px;
     width: 520px;
     position: relative;
+    left: 50px;
     display: flex;
     justify-content: center;
 }
