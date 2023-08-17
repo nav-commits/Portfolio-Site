@@ -9,8 +9,43 @@
     flex-direction: column;
 }
 
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.child-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .tech-title {
     margin-top: 20px;
     color: white;
     font-size: 25px;
+}
+
+.tech-labels {
+    font-size: 16px;
+    padding: 9px;
+    padding-left: 20px;
+    cursor: pointer;
+    width: 300px;
+    list-style: none;
+}
+.tech-labels:hover {
+    background-color: #39cad3;
+    color: white;
+    transition: background-color 0.2s ease-out 100ms;
+}
+
+.tech-image-container {
+    height: 360px;
+    width: 520px;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }

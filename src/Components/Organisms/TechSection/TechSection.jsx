@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../TechSection/TechSection.css';
+import { techLabels } from '../../../Utils/TechNames';
+import { initialImages } from '../../../Utils/TechNames';
+
 export default function TechSection() {
-    const list = [
-        'JavaScript',
-        'React JS',
-        'React Native',
-        'HTML',
-        'CSS',
-        'TypeScript',
-        'Node JS',
-        'Express Js',
-        'MongoDB',
-        'SQL',
-    ];
+    const [activeLabel, setActiveLabel] = useState('JavaScript');
+    const [images, setImages] = useState(initialImages);
+
+    const handleLabelClick = (menuTitle) => {
+        const filteredImages = initialImages.filter((image) => image.label === menuTitle);
+        setImages(filteredImages);
+        setActiveLabel(menuTitle);
+    };
+
     return (
         <div id='Technologies' className='tech-section-container'>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -22,49 +22,38 @@ export default function TechSection() {
                 </div>
             </div>
 
-            <div
-                style={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'center',
-                    gap: '50px',
-                    marginTop: '100px',
-                }}
-            >
-                <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    {list.map((item) => {
-                        return (
-                            <ul
+            <div className='content-container '>
+                <div className='child-container'>
+                    {techLabels.map((item) => (
+                        <ul
+                            key={item}
+                            style={{
+                                borderLeft: '3px solid #39cad3',
+                            }}
+                        >
+                            <li
+                                className='tech-labels'
+                                onClick={() => handleLabelClick(item)}
                                 style={{
-                                    padding: '5px',
-                                    paddingLeft: '10px',
-                                    borderLeft: '3px solid #39cad3',
+                                    textDecoration: 'none',
+                                    color: activeLabel === item ? 'black' : 'white',
+                                    backgroundColor: activeLabel === item ? '#39cad3' : null,
                                 }}
                             >
-                                <a
-                                    style={{
-                                        textDecoration: 'none',
-                                        color: 'white',
-                                        fontSize: '15px',
-                                    }}
-                                    href='/'
-                                >
-                                    {item}
-                                </a>
-                            </ul>
-                        );
-                    })}
+                                {item.toUpperCase()}
+                            </li>
+                        </ul>
+                    ))}
                 </div>
-                <div
-                    style={{
-                        height: '300px',
-                        width: '420px',
-                        backgroundColor: 'black',
-                        position: 'relative',
-                        left: '110px',
-                    }}
-                >
-                    <p>Hello world</p>
+                <div className='tech-image-container'>
+                    {images.map((image, index) => (
+                        <img
+                            style={{ height: '200px', width: '200px', marginTop: '60px' }}
+                            key={index}
+                            src={image.src}
+                            alt={image.label}
+                        />
+                    ))}
                 </div>
             </div>
         </div>
