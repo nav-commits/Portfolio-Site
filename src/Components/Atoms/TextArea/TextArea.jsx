@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function TextArea({ name }) {
+export default function TextArea({ name, value, onChange }) {
     return (
-        <textarea style={{
+        <textarea value={value} onChange={onChange} style={{
             borderRadius: '5px',
             padding: '8px',
             backgroundColor: 'lightgrey',
