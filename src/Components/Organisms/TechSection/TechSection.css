@@ -50,3 +50,8 @@
     display: flex;
     justify-content: center;
 }
+
+.active {
+    height: 5px;
+    background-color: #39cad3;
+}

@@ -50,7 +50,7 @@ export default function TechSection() {
                         (image, index) =>
                             image.label === activeLabel && (
                                 <img
-                                    style={{ height: '280px', width: '280px', marginTop: '60px' }}
+                                    style={{ height: '280px', marginTop: '60px' }}
                                     key={index}
                                     src={image.src}
                                     alt={image.label}
