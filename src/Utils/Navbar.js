@@ -1,1 +1,1 @@
-export const labelsNavBar = ['Home', 'About', 'Services', 'Technologies', 'Contact', 'Projects'];
+export const labelsNavBar = ['Home', 'About', 'Technologies', 'Projects', 'Services', 'Contact'];

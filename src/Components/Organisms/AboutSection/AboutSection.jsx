@@ -5,6 +5,7 @@ import logo from '../../../Images/20180222_115031.jpeg';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Resume from '../../../Resume/Nav_DhamraitResume.pdf';
+import ActiveLine from '../../Atoms/ActiveLine/ActiveLine';
 
 export default function AboutSection() {
     return (
@@ -33,7 +34,7 @@ export default function AboutSection() {
 
             <div className='about-section-container'>
                 <p style={{ fontSize: '24px' }}>About</p>
-                <div className='active' style={{ width: '62px', marginBottom: '10px' }} />
+                <ActiveLine width={'67px'} marginTop={'2px'} />
                 <p style={{ width: '410px' }}>
                     I am a self-taught Full-Stack Developer, but more emphasis with Front-End
                     Development with industry experience building websites and web applications. I
