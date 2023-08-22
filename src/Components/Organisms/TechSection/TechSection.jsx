@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../TechSection/TechSection.css';
 import { techLabels } from '../../../Utils/TechNames';
 import { initialImages } from '../../../Utils/TechNames';
+import ActiveLine from '../../Atoms/ActiveLine/ActiveLine';
 
 export default function TechSection() {
     const [activeLabel, setActiveLabel] = useState('JavaScript');
@@ -18,7 +19,7 @@ export default function TechSection() {
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <div className='tech-content-container'>
                     <p className='tech-title'>Technologies </p>
-                    <div className='active' style={{ width: '145px', marginTop: '5px' }} />
+                    <ActiveLine width={'145px'} marginTop={'2px'} />
                 </div>
             </div>
 

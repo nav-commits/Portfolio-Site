@@ -4,7 +4,7 @@ import NavBioFormSection from '../Organisms/NavBioFormSection/NavBioFormSection'
 import AboutSection from '../Organisms/AboutSection/AboutSection';
 import TechSection from '../Organisms/TechSection/TechSection';
 import ProjectsSection from '../Organisms/ProjectsSection/ProjectsSection';
-
+import ServicesSection from '../Organisms/ServicesSection/ServicesSection';
 export default function HomePage() {
     return (
         <React.Fragment>
@@ -13,6 +13,7 @@ export default function HomePage() {
             <AboutSection />
             <TechSection />
             <ProjectsSection />
+            <ServicesSection />
         </React.Fragment>
     );
 }
