@@ -1,0 +1,29 @@
+@media only screen and (min-width: 800px) {
+    .swiper {
+        width: 30%;
+    }
+}
+.swiper-slide {
+    font-size: 14px;
+    background: #fff;
+    margin-top: 40px;
+    align-items: left;
+    background-color: #39cad3;
+    margin-bottom: 30px;
+    padding: 50px;
+    padding-top: 10px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #39cad3 !important;
+}
+
+.swiper-pagination-bullet {
+    margin-left: 12px !important;
+}

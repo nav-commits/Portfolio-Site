@@ -1,6 +1,6 @@
 .services-section-container {
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 .services-content-container {
     display: flex;
@@ -11,4 +11,11 @@
     margin-top: 20px;
     font-size: 30px;
     color: black;
+}
+
+.carousel-content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
