@@ -28,12 +28,7 @@ export default function ServicesSection() {
                     <SwiperSlide key={id}>
                         <h2 style={{ textAlign: 'center', padding: '20px' }}>{item.title}</h2>
                         <div
-                            style={{
-                                display: 'flex',
-                                flexDirection: 'row',
-                                alignItems: 'center',
-                                gap: '10px',
-                            }}
+                            className='carousel-content-container'
                         >
                             {item.description}
                             <img
