@@ -1,9 +1,10 @@
 import React from 'react';
 import './Button.css';
 
-export const Button = ({ title, backgroundColor, width, marginTop, fontSize, disabled }) => {
+export const Button = ({ title, backgroundColor, width, marginTop, fontSize, disabled, onClick }) => {
     return (
         <button
+            onClick={onClick}
             style={{
                 backgroundColor: backgroundColor,
                 width: width,

@@ -82,7 +82,6 @@ export default function NavBioFormSection() {
                             onChange={(e) => setMessage(e.target.value)}
                         />
                     </div>
-
                     <Button
                         title='Submit'
                         backgroundColor='#39CAD3'
