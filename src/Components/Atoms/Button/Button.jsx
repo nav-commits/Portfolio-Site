@@ -1,7 +1,7 @@
 import React from 'react';
 import './Button.css';
 
-export const Button = ({ title, backgroundColor, width, marginTop, fontSize, disabled, onClick }) => {
+export const Button = ({ title, backgroundColor, width, marginTop, fontSize, disabled, onClick , icon}) => {
     return (
         <button
             onClick={onClick}
@@ -14,6 +14,7 @@ export const Button = ({ title, backgroundColor, width, marginTop, fontSize, dis
             className='button'
             disabled={disabled}
         >
+            {icon ? icon : null}
             {title}
         </button>
     );
