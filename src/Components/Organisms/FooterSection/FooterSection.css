@@ -1,0 +1,14 @@
+.content-container-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.parent-footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+}

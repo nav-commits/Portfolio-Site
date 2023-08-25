@@ -3,6 +3,11 @@
         width: 30%;
     }
 }
+.swiper {
+    height: 330px;
+    width: 40%;
+}
+
 .swiper-slide {
     font-size: 14px;
     background: #fff;

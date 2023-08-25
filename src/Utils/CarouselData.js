@@ -9,6 +9,7 @@ export const carouselData = [
         title: 'Mobile Development',
         description:
             "In a mobile-centric world, having a captivating and high-performing mobile app is crucial. That's where I come in! I specialize in developing native and cross-platform mobile applications for iOS and Android devices. Using the latest technologies and industry best practices, I create mobile apps that are not only visually appealing but also deliver a smooth user experience. Whether you have an idea for a productivity app, a social networking platform, or an on-demand service, I'll turn your vision into a feature-rich and user-friendly reality.",
+        image: 'https://cdn2.iconfinder.com/data/icons/font-awesome/1792/code-512.png',
     },
     {
         title: 'UX Design',
