@@ -3,6 +3,13 @@ import { Button } from '../../Atoms/Button/Button';
 import './NavBioSection.css';
 
 export default function NavBioSection() {
+    const handleClick = () => {
+        document.getElementById('About').scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+        });
+    };
+
     return (
         <div className='bio-container'>
             <p className='bio-header'>
@@ -13,7 +20,13 @@ export default function NavBioSection() {
                 Hello there! I'm Nav Dhamrait, a highly skilled and experienced full-stack developer
                 specializing in web development, mobile development, and UX front-end design.{' '}
             </p>
-            <Button title='More About Me' backgroundColor='#39CAD3' width='90px' fontSize={'10px'} />
+            <Button
+                title='More About Me'
+                backgroundColor='#39CAD3'
+                width='90px'
+                fontSize={'10px'}
+                onClick={handleClick}
+            />
         </div>
     );
 }

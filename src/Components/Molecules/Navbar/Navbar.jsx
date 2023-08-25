@@ -6,7 +6,6 @@ import ActiveLine from '../../Atoms/ActiveLine/ActiveLine';
 
 export default function Navbar() {
     const [labelName, setLabel] = useState('Home');
-
     const checkLabel = (menuTitle) => {
         setLabel(menuTitle);
     };
@@ -18,7 +17,7 @@ export default function Navbar() {
                     <Link
                         to={label}
                         smooth={true}
-                        offset={200}
+                        offset={-100}
                         duration={500}
                         style={{ cursor: 'pointer' }}
                         onClick={() => checkLabel(label)}
@@ -31,4 +30,3 @@ export default function Navbar() {
         </ul>
     );
 }
-

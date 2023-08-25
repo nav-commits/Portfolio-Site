@@ -17,8 +17,18 @@ export default function AboutSection() {
                     <span style={{ color: '#39CAD3', fontWeight: '300' }}> Dhamrait</span>
                 </p>
                 <div className='icons-container'>
-                    <LinkedInIcon style={{ color: '#0A66C2' }} />
-                    <GitHubIcon />
+                    <a href='https://www.linkedin.com/in/nav-dhamrait-20114ab3' target='_blank'>
+                        {' '}
+                        <LinkedInIcon style={{ color: '#0A66C2' }} />
+                    </a>
+                    <a
+                        href='https://github.com/nav-commits'
+                        target='_blank'
+                        style={{ color: 'black' }}
+                    >
+                        {' '}
+                        <GitHubIcon />
+                    </a>
                 </div>
 
                 <a href={Resume} download='Example-PDF-document' target='_blank' rel='noreferrer'>

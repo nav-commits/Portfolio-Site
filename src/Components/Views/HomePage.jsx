@@ -7,6 +7,7 @@ import ProjectsSection from '../Organisms/ProjectsSection/ProjectsSection';
 import ServicesSection from '../Organisms/ServicesSection/ServicesSection';
 import FooterSection from '../Organisms/FooterSection/FooterSection';
 export default function HomePage() {
+    
     return (
         <React.Fragment>
             <NavbarContent />
