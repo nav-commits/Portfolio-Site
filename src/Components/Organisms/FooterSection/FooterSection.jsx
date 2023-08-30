@@ -7,9 +7,17 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 export default function FooterSection() {
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
+            behavior: 'smooth',
+        });
+    };
+
+    const scrollToTopTwo = () => {
+        window.scrollTo({
+            top: 0 ,
             behavior: 'smooth',
         });
     };
@@ -62,7 +70,7 @@ export default function FooterSection() {
                         width='125px'
                         marginTop='10px'
                         fontSize={'12px'}
-                        onClick={scrollToTop}
+                        onClick={scrollToTopTwo}
                     />
                 </div>
             </div>

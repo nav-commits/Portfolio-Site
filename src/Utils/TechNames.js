@@ -35,7 +35,10 @@ export const initialImages = [
         label: 'Node JS',
     },
 
-    { src: 'https://miro.medium.com/max/1200/1*Jr3NFSKTfQWRUyjblBSKeg.png', label: 'Express Js' },
+    {
+        src: 'https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png',
+        label: 'Express Js',
+    },
 
     {
         src: 'https://play-lh.googleusercontent.com/IzEj9Owgf7-Y6HcSkdbUFbgUXuHcdjzA2PHE1D2ylCHNaxG7t0hGxB3ck_K2QJC9tQ=w600-h300-pc0xffffff-pd',

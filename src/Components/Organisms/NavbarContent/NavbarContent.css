@@ -7,6 +7,25 @@
     background-color: white;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     position: sticky;
-  top: 0px;
-  z-index: 200;
+    top: 0px;
+    z-index: 200;
+}
+.menu-icon {
+    display: none !important;
+}
+
+@media screen and (max-width: 918px) {
+    .nav-content {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        padding-left: 12px;
+    }
+    .menu-icon {
+        display: block !important;
+        cursor: pointer;
+        font-size: 30px;
+        color: #39cad3;
+        margin-right: 20px;
+    }
 }
