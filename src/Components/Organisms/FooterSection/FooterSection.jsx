@@ -28,31 +28,35 @@ export default function FooterSection() {
         >
             <div className='parent-footer-container'>
                 <div className='content-container-footer'>
-                    <h2 style={{ color: '#39cad3' }}>Nav Dhamrait</h2>
+                    <h2 className='profile-user-name' style={{ color: '#39cad3' }}>Nav Dhamrait</h2>
                     <h3>Full-Stack Developer</h3>
                 </div>
 
                 <div className='content-container-footer'>
-                    <h2 style={{ color: '#39cad3' }}>Contact</h2>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                        <span style={{ color: '#39cad3' }}>
-                            <LocalPhoneIcon />
-                        </span>{' '}
-                        <p> 647-975-3467</p>
-                    </div>
+                    <div className='sub-container-footer'>
+                        <h2 style={{ color: '#39cad3' }}>Contact</h2>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                            <span style={{ color: '#39cad3' }}>
+                                <LocalPhoneIcon />
+                            </span>{' '}
+                            <p> 647-975-3467</p>
+                        </div>
 
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                        <span style={{ color: '#39cad3' }}>
-                            <EmailIcon />
-                        </span>{' '}
-                        <p> navdeep.dhamrait94@gmail.com</p>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                            <span style={{ color: '#39cad3' }}>
+                                <EmailIcon />
+                            </span>{' '}
+                            <p> navdeep.dhamrait94@gmail.com</p>
+                        </div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+                            <span style={{ color: '#39cad3' }}>
+                                <LocationOnIcon />
+                            </span>{' '}
+                            <p> Toronto, Ontario</p>
+                        </div>
+
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                        <span style={{ color: '#39cad3' }}>
-                            <LocationOnIcon />
-                        </span>{' '}
-                        <p> Toronto, Ontario</p>
-                    </div>
+                    
                 </div>
 
                 <div className='content-container-footer'>

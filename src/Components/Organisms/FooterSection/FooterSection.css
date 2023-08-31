@@ -5,10 +5,39 @@
     gap: 12px;
     margin-top: 20px;
 }
+ .sub-container-footer{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 10px;
+    }
 
 .parent-footer-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     color: white;
+}
+
+@media screen and (max-width: 918px) {
+    .parent-footer-container  {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between!important;
+        align-items: center !important;
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+
+    .sub-container-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between!important;
+        align-items: center !important;
+        gap: 12px;
+    }
+    .profile-user-name{
+        text-align: center;
+    }
 }

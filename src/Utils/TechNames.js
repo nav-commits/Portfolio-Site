@@ -36,12 +36,12 @@ export const initialImages = [
     },
 
     {
-        src: 'https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png',
+        src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS7RVaKE0ubjH_Ioi90MHiDzKw-GpNI1BsHw&usqp=CAU',
         label: 'Express Js',
     },
 
     {
-        src: 'https://play-lh.googleusercontent.com/IzEj9Owgf7-Y6HcSkdbUFbgUXuHcdjzA2PHE1D2ylCHNaxG7t0hGxB3ck_K2QJC9tQ=w600-h300-pc0xffffff-pd',
+        src: 'https://seeklogo.com/images/M/mongodb-logo-D13D67C930-seeklogo.com.png',
         label: 'MongoDB',
     },
 
