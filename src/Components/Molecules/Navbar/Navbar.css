@@ -5,13 +5,33 @@
     list-style: none;
 }
 
+
 .nav-links a {
     text-decoration: none;
     color: black;
 }
+
 
 @media screen and (max-width: 918px) {
     .nav-links {
         display: none;
     }
 }
+
+
+.nav-links-mobile-tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    list-style: none;
+}
+
+
+.nav-links-mobile-tablet a {
+    text-decoration: none;
+    color: black;
+}
+
+
+

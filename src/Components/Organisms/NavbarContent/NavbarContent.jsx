@@ -5,11 +5,11 @@ import NameAndLogo from '../../Molecules/NameAndLogo/NameAndLogo';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
-export default function NavbarContent({isOpen, toggleMenu}) {
+export default function NavbarContent({ isOpen, toggleMenu, isTabletOrMobile }) {
     return (
         <nav className='nav-content'>
             <NameAndLogo />
-            <Navbar />
+            <Navbar isTabletOrMobile={isTabletOrMobile} />
             {isOpen ? (
                 <CloseIcon className='menu-icon' onClick={toggleMenu} />
             ) : (
