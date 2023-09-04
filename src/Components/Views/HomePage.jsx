@@ -23,50 +23,30 @@ export default function HomePage() {
     };
 
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 900px)' });
-    console.log(isTabletOrMobile);
     return (
         <React.Fragment>
             <NavbarContent isTabletOrMobile={isTabletOrMobile} toggleMenu={toggleMenu} />
-            {/* placeholder slider will be recoded */}
-            {isOpen && isTabletOrMobile ? (
-                <div
-                    style={{
-                        padding: '20px',
-                        marginTop:'85px',
-                        height: '100vh',
-                        backgroundColor: 'white',
-                        boxShadow:'2px 0 10px rgba(0, 0, 0, 0.2)',
-                        width: '250px',
-                        zIndex: '100',
-                        position: 'fixed',
-                        top: '0'
-                    }}
-                >
-                    <ul className={'nav-links-mobile-tablet'}>
-                        {labelsNavBar.map((label, idx) => (
-                            <li key={idx}>
-                                <Link
-                                    to={label}
-                                    smooth={true}
-                                    offset={-100}
-                                    duration={500}
-                                    style={{ cursor: 'pointer' }}
-                                    onClick={() => checkLabel(label)}
-                                >
-                                    {label}
-                                </Link>
-                                {labelName === label ? (
-                                    <ActiveLine
-                                        marginTop={'2px'}
-                                        height={'3.5px'}
-                                        width={'100px'}
-                                    />
-                                ) : null}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            ) : null}
+            <div className={isOpen && isTabletOrMobile ? 'nav-sideBar show' : 'nav-sideBar hide'}>
+                <ul className={'nav-links-mobile-tablet'}>
+                    {labelsNavBar.map((label, idx) => (
+                        <li key={idx}>
+                            <Link
+                                to={label}
+                                smooth={true}
+                                offset={-100}
+                                duration={500}
+                                style={{ cursor: 'pointer'}}
+                                onClick={() => checkLabel(label)}
+                            >
+                                {label}
+                            </Link>
+                            {labelName === label ? (
+                                <ActiveLine marginTop={'2px'} height={'3.5px'} />
+                            ) : null}
+                        </li>
+                    ))}
+                </ul>
+            </div>
             <NavBioFormSection />
             <AboutSection />
             <TechSection />
