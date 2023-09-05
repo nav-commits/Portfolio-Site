@@ -10,7 +10,7 @@
     color: black;
 }
 
-@media screen and (max-width: 918px) {
+@media screen and (max-width: 818px) {
     .nav-links {
         display: none;
     }
