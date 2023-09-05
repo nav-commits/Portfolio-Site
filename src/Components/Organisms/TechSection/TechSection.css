@@ -50,3 +50,36 @@
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 918px) {
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center !important;
+        flex-wrap: wrap !important;
+        margin-top: 100px;
+    }
+
+    .tech-section-container {
+        background-color: #0f272f;
+        height: 920px;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .child-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+    }
+
+    .tech-image-container {
+        height: 360px;
+        width: 520px;
+        position: relative;
+        left: -38px;
+        display: flex;
+        justify-content: center;
+    }
+}

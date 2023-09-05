@@ -22,7 +22,6 @@ export default function ServicesSection() {
                     <ActiveLine width={'110px'} marginTop={'2px'} />
                 </div>
             </div>
-
             <Swiper pagination={true} modules={[Pagination]} className='mySwiper'>
                 {carouselData.map((item, id) => (
                     <SwiperSlide key={id}>

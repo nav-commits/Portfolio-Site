@@ -10,7 +10,7 @@ import ActiveLine from '../../Atoms/ActiveLine/ActiveLine';
 export default function AboutSection() {
     return (
         <div className='about-container' id='About'>
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <div className='personal-profile'>
                 <img src={logo} alt='profile' className='profile-image' />
                 <p className='name-text'>
                     Nav
@@ -43,9 +43,11 @@ export default function AboutSection() {
             </div>
 
             <div className='about-section-container'>
-                <p style={{ fontSize: '24px' }}>About</p>
-                <ActiveLine width={'67px'} marginTop={'2px'} />
-                <p style={{ width: '410px' }}>
+                <div className='about-line-container'>
+                    <p className='about' style={{ fontSize: '24px' }}>About</p>
+                    <ActiveLine width={'67px'} marginTop={'2px'} />
+                </div>
+                <p className='about-content' style={{ width: '410px' }}>
                     I am a self-taught Full-Stack Developer, but more emphasis with Front-End
                     Development with industry experience building websites and web applications. I
                     specialize in JavaScript and have professional experience working with React JS.

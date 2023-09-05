@@ -20,3 +20,21 @@
     font-size: 14px;
     text-align: center;
 }
+
+@media screen and (max-width: 918px) {
+    .parent-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 918px) {
+   .form-container{
+    width: 350px !important;
+    margin: 20px !important;
+   }
+}
+

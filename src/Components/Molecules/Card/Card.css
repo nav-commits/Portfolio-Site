@@ -1,5 +1,5 @@
 .card {
-    height: 650px;
+    height: 850px;
     width: 330px;
     padding: 30px;
     background-color: white;
@@ -16,6 +16,8 @@
 .card-text-style {
     padding: 5px;
     font-size: 13px;
+
+    line-height: 1.4;
 }
 .card-header {
     padding: 10px;
@@ -26,8 +28,7 @@
     padding: 5px;
 }
 
-
-.card-text-website-link{
+.card-text-website-link {
     font-size: 12px;
     padding: 5px;
 }

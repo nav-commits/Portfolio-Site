@@ -1,9 +1,17 @@
 .logo {
     border-radius: 50%;
-    background-color: #39CAD3;
+    background-color: #39cad3;
     color: black;
     height: 50px;
     width: 50px;
     text-align: center;
     padding-top: 15px;
 }
+
+/* @media screen and (max-width: 418px) {
+    .logo {
+        height: 40px;
+        width: 50px;
+        padding-top: 10px;
+    }
+} */

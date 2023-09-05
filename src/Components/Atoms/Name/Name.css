@@ -1,0 +1,9 @@
+.name {
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 740px) and (min-width: 360px) {
+    .name {
+        font-size: 15px;
+    }
+}

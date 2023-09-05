@@ -1,12 +1,8 @@
-@media only screen and (min-width: 800px) {
+/* @media only screen and (min-width: 800px) {
     .swiper {
         width: 30%;
     }
-}
-.swiper {
-    height: 330px;
-    width: 40%;
-}
+} */
 
 .swiper-slide {
     font-size: 14px;
@@ -17,6 +13,7 @@
     margin-bottom: 30px;
     padding: 50px;
     padding-top: 10px;
+    height: 320px;
 }
 
 .swiper-slide img {
@@ -31,4 +28,10 @@
 
 .swiper-pagination-bullet {
     margin-left: 12px !important;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+    .swiper-slide {
+        font-size: 11px !important;
+    }
 }

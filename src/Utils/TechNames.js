@@ -35,10 +35,13 @@ export const initialImages = [
         label: 'Node JS',
     },
 
-    { src: 'https://miro.medium.com/max/1200/1*Jr3NFSKTfQWRUyjblBSKeg.png', label: 'Express Js' },
+    {
+        src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS7RVaKE0ubjH_Ioi90MHiDzKw-GpNI1BsHw&usqp=CAU',
+        label: 'Express Js',
+    },
 
     {
-        src: 'https://play-lh.googleusercontent.com/IzEj9Owgf7-Y6HcSkdbUFbgUXuHcdjzA2PHE1D2ylCHNaxG7t0hGxB3ck_K2QJC9tQ=w600-h300-pc0xffffff-pd',
+        src: 'https://seeklogo.com/images/M/mongodb-logo-D13D67C930-seeklogo.com.png',
         label: 'MongoDB',
     },
 
