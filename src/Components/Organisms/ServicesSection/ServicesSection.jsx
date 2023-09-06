@@ -25,16 +25,12 @@ export default function ServicesSection() {
             <Swiper pagination={true} modules={[Pagination]} className='mySwiper'>
                 {carouselData.map((item, id) => (
                     <SwiperSlide key={id}>
-                        <h2 style={{ textAlign: 'center', padding: '20px' }}>{item.title}</h2>
+                        <h2 className='carousel-title' style={{ textAlign: 'center', padding: '20px' }}>{item.title}</h2>
                         <div
                             className='carousel-content-container'
                         >
                             {item.description}
-                            <img
-                                style={{ height: '50px', width: '50px' }}
-                                src={item.image}
-                                alt=''
-                            />
+                            {item.image}
                         </div>
                     </SwiperSlide>
                 ))}
