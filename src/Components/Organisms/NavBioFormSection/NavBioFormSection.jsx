@@ -47,7 +47,7 @@ export default function NavBioFormSection() {
 
     useEffect(() => {
         checkInputVal()
-    }, [Name, Email, Message]);
+    },);
 
     return (
         <div className='parent-container' id='Home'>

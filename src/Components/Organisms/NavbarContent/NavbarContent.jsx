@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from '../../Molecules/Navbar/Navbar';
 import './NavbarContent.css';
 import NameAndLogo from '../../Molecules/NameAndLogo/NameAndLogo';

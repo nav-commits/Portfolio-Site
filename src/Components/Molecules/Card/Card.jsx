@@ -20,7 +20,8 @@ export default function Card({ name, image, description, onClick, githubLink, we
                 <a
                     style={{ color: 'black', textDecoration: 'none', cursor: 'pointer' }}
                     href={githubLink}
-                    target='_blank'
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     {githubLink}
                 </a>
