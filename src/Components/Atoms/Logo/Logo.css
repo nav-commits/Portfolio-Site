@@ -8,10 +8,9 @@
     padding-top: 15px;
 }
 
-/* @media screen and (max-width: 418px) {
+@media only screen and (min-width: 820px) and (max-width: 918px) {
     .logo {
-        height: 40px;
-        width: 50px;
-        padding-top: 10px;
+        height: 46px;
+        width: 60px;
     }
-} */
+}

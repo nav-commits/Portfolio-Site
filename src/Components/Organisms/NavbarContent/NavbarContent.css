@@ -20,7 +20,7 @@
         display: flex !important;
         flex-direction: row !important;
         justify-content: space-between !important;
-        padding-left: 12px;
+        padding-left: 8px;
     }
     .menu-icon {
         display: block !important;
@@ -28,5 +28,22 @@
         font-size: 30px;
         color: black;
         margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .nav-content {
+        display: flex;
+        justify-content: center;
+        gap: 150px;
+        align-items: center;
+        min-height: 8vh;
+        background-color: white;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        position: fixed;
+        top: 0px;
+        z-index: 200;
+        width: 100%;
+        padding: 10px !important;
     }
 }
