@@ -2,6 +2,7 @@ import React from 'react';
 import './ProjectsSection.css';
 import Card from '../../Molecules/Card/Card';
 import ActiveLine from '../../Atoms/ActiveLine/ActiveLine';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const ProjectsSection = () => {
     const openInNewTab = (url) => {
@@ -25,6 +26,7 @@ const ProjectsSection = () => {
                     description="EQ Bank, a prominent Canadian online financial institution, has earned recognition for its exceptional high-yield savings accounts and an intuitively designed digital banking interface. As part of a personal project, I embarked on the endeavor of crafting a meticulously engineered replica of EQ Bank from the ground up. Leveraging my expertise in web development, I harnessed React.js, CSS, and HTML to construct a sophisticated emulation of EQ Bank's digital platform. Moreover, I meticulously curated and managed the data using JSON, ensuring a seamless user experience. The culmination of this project involved the creation of pivotal website components, including an aesthetically polished homepage and an intricate account registration process, all designed to closely mirror the original EQ Bank experience"
                     onClick={() => openInNewTab('https://eqbanksite.netlify.app')}
                     githubLink={'https://github.com/nav-commits/eqbanksite'}
+                    githubIcon={<GitHubIcon />}
                     websiteLink={'https://eqbanksite.netlify.app'}
                 />
                 <Card
@@ -35,6 +37,7 @@ const ProjectsSection = () => {
 Driven by a passion for web development, I embarked on a personal project to emulate the Fido website. Employing a combination of React.js, HTML, CSS, and meticulously curated JSON data, I painstakingly recreated various components and pages of the Fido website. This endeavor allowed me to hone my web development skills while replicating the essence of Fido's online presence."
                     onClick={() => openInNewTab('https://fidosite.netlify.app')}
                     githubLink={'https://github.com/nav-commits/Fido'}
+                    githubIcon={<GitHubIcon />}
                     websiteLink={'https://fidosite.netlify.app'}
                 />
 
@@ -46,8 +49,9 @@ I undertook a challenging personal project: the creation of a clone of Afterpay'
 
 Harnessing my skills in React.js, HTML, CSS, and a meticulously curated JSON dataset, I meticulously crafted various aspects of this innovative payment platform. This endeavor allowed me to delve into web development intricacies while faithfully recreating key features and functionalities of Afterpay's website."
                     onClick={() => openInNewTab('https://afterpaysite.netlify.app')}
-                    githubLink={'https://github.com/nav-commits/AfterPay'}
                     websiteLink={'https://afterpaysite.netlify.app'}
+                    githubLink={'https://github.com/nav-commits/AfterPay'  }
+                    githubIcon={<GitHubIcon />}
                 />
             </div>
         </React.Fragment>

@@ -26,7 +26,7 @@ export default function HomePage() {
     return (
         <React.Fragment>
             <NavbarContent isTabletOrMobile={isTabletOrMobile} toggleMenu={toggleMenu} />
-            <div className={isOpen && isTabletOrMobile ? 'nav-sideBar show' : 'nav-sideBar hide'}>
+            <div onClick={() => {setIsOpen(false)}} className={isOpen && isTabletOrMobile ? 'nav-sideBar show' : 'nav-sideBar hide'}>
                 <ul className={'nav-links-mobile-tablet'}>
                     {labelsNavBar.map((label, idx) => (
                         <li key={idx}>
