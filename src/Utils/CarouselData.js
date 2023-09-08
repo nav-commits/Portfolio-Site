@@ -7,7 +7,6 @@ export const carouselData = [
         title: 'Web Development',
         description:
             " Need a website that wows your audience and performs flawlessly? Look no further! I excel in building dynamic and responsive websites that not only catch the eye but also provide a seamless user experience. Whether you're looking for a simple portfolio site, an e-commerce platform, or a complex web application, I've got you covered. With my expertise in various programming languages, frameworks, and CMS platforms, your website will be fast, secure, and search engine optimized.",
-        // image: 'https://cdn2.iconfinder.com/data/icons/font-awesome/1792/code-512.png',
         image: <WebIcon fontSize='large' />,
     },
     {

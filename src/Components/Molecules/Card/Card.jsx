@@ -1,14 +1,24 @@
 import React from 'react';
 import '../Card/Card.css';
 
-export default function Card({ name, image, description, onClick, githubLink, websiteLink }) {
+export default function Card({
+    name,
+    image,
+    description,
+    onClick,
+    githubLink,
+    websiteLink,
+    githubIcon,
+}) {
     return (
         <div className='card' id='Projects'>
-            <img
-                src={image}
-                alt='Avatar'
-                style={{ width: '100%', height: '200px', objectFit: 'cover' }}
-            />
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <img
+                    src={image}
+                    alt='Avatar'
+                    style={{ width: '270px', height: '250px' }}
+                />
+            </div>
             <h2 className='card-header'>{name}</h2>
             <p className='card-text-style'>{description}</p>
             <p className='card-text-style'>
@@ -16,19 +26,25 @@ export default function Card({ name, image, description, onClick, githubLink, we
                 data.
             </p>
             <p className='card-text-source-code'>
-                Source <span style={{ color: '#39cad3' }}>Code</span> :{' '}
+                Source Code : &nbsp;
                 <a
-                    style={{ color: 'black', textDecoration: 'none', cursor: 'pointer' }}
+                    style={{
+                        color: '#39cad3',
+                        textDecoration: 'none',
+                        cursor: 'pointer',
+                        position: 'relative',
+                        top: '5px',
+                    }}
                     href={githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target='_blank'
+                    rel='noopener noreferrer'
                 >
-                    {githubLink}
+                    {githubIcon}
                 </a>
             </p>
             <p className='card-text-website-link' onClick={onClick}>
-                Website <span style={{ color: '#39cad3' }}>URL</span> :{' '}
-                <span style={{ color: 'black', textDecoration: 'none', cursor: 'pointer' }}>
+                Website URL :
+                <span style={{ color: '#39cad3', textDecoration: 'none', cursor: 'pointer' }}>
                     {websiteLink}
                 </span>
             </p>
