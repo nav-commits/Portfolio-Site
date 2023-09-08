@@ -16,7 +16,7 @@ export default function Card({
                 <img
                     src={image}
                     alt='Avatar'
-                    style={{ width: '270px', height: '250px' }}
+                    style={{ width: '280px', height: '250px' }}
                 />
             </div>
             <h2 className='card-header'>{name}</h2>

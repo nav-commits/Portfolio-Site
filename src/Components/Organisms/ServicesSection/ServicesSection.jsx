@@ -9,9 +9,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import '../../../styles.css';
+import 'swiper/css/navigation';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 export default function ServicesSection() {
     return (
@@ -22,7 +24,7 @@ export default function ServicesSection() {
                     <ActiveLine width={'110px'} marginTop={'2px'} />
                 </div>
             </div>
-            <Swiper pagination={true} modules={[Pagination]} className='mySwiper'>
+            <Swiper navigation={true} pagination={true} modules={[Pagination, Navigation]} className='mySwiper'>
                 {carouselData.map((item, id) => (
                     <SwiperSlide key={id}>
                         <h2 className='carousel-title' style={{ textAlign: 'center', padding: '20px' }}>{item.title}</h2>
