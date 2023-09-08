@@ -23,6 +23,13 @@
 .swiper-pagination-bullet {
     margin-left: 12px !important;
 }
+.swiper-button-next {
+    color:  black !important;
+    position: relative;
+}
+.swiper-button-prev {
+    color:  black !important;
+}
 
 @media only screen and (min-width: 300px) and (max-width: 700px) {
     .swiper-slide {
@@ -34,7 +41,5 @@
     .swiper {
         width: 45% !important;
     }
-    /* .swiper-slide {
-        padding: 18px !important;
-    } */
+
 }
